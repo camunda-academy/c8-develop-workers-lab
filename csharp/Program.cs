@@ -20,11 +20,18 @@ public class Program
         .UseContactPoint(contactPoint)
         .Build();
 
-        Console.WriteLine("Connecting to Camunda...");
-        var topology = await client.TopologyRequest().Send();
-        Console.WriteLine($"Connected! {topology}");
-        using var signal = new EventWaitHandle(false, EventResetMode.AutoReset);
-        signal.WaitOne();
+        try
+        {
+            Console.WriteLine("Connecting to Camunda...");
+            var topology = await client.TopologyRequest().Send();
+            Console.WriteLine($"Connected! {topology}");
+            using var signal = new EventWaitHandle(false, EventResetMode.AutoReset);
+            signal.WaitOne();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error connecting to Camunda: {ex.Message}");
+        }
     }
 
     private static IConfiguration BuildConfiguration()
