@@ -1,12 +1,15 @@
-namespace Camunda8Training.Services;
+namespace Camunda.Training.CSharp.Services;
 
-public class CreditService {
-    public double GetCustomerCredit(string? customerId) {
+public class CreditService
+{
+    public double GetCustomerCredit(string? customerId)
+    {
         var customerCredit = Convert.ToDouble(customerId?.Substring(customerId.Length - 2, 2));
         return customerCredit;
     }
 
-    public double DeductCredit(double customerCredit, double amountToDeduct) {
+    public double DeductCredit(double customerCredit, double amountToDeduct)
+    {
         return amountToDeduct > customerCredit ? amountToDeduct - customerCredit : 0.0;
     }
 }

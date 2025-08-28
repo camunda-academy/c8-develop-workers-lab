@@ -1,4 +1,4 @@
-namespace Camunda8Training.Services;
+namespace Camunda.Training.CSharp.Services;
 
 public class CreditCardService
 {

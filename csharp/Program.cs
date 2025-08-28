@@ -1,45 +1,37 @@
 using Zeebe.Client;
 using Zeebe.Client.Impl.Builder;
 
-namespace Camunda8Training
+namespace Camunda.Training.CSharp.Services;
+
+public class Program
 {
-    public class Program
+
+    public static async Task Main(string[] args)
     {
-        private static IZeebeClient? _client;
-        public static async Task Main(string[] args)
-        {
-            var program = new Program();
-            await program.Run();
-        }
+        var configuration = BuildConfiguration();
+        var clientId = configuration["ZeebeClientConfig:ClientId"];
+        var clientSecret = configuration["ZeebeClientConfig:ClientSecret"];
+        var contactPoint = configuration["ZeebeClientConfig:ContactPoint"];
 
-        private async Task Run()
-        {
-            var configuration = BuildConfiguration();
-            var clientId = configuration["ZeebeClientConfig:ClientId"];
-            var clientSecret = configuration["ZeebeClientConfig:ClientSecret"];
-            var contactPoint = configuration["ZeebeClientConfig:ContactPoint"];
+        var client = CamundaCloudClientBuilder
+        .Builder()
+        .UseClientId(clientId)
+        .UseClientSecret(clientSecret)
+        .UseContactPoint(contactPoint)
+        .Build();
 
-            _client = CamundaCloudClientBuilder
-            .Builder()
-            .UseClientId(clientId)
-            .UseClientSecret(clientSecret)
-            .UseContactPoint(contactPoint)
-            .Build();
+        Console.WriteLine("Connecting to Camunda...");
+        var topology = await client.TopologyRequest().Send();
+        Console.WriteLine($"Connected! {topology}");
+        using var signal = new EventWaitHandle(false, EventResetMode.AutoReset);
+        signal.WaitOne();
+    }
 
-            using var signal = new EventWaitHandle(false, EventResetMode.AutoReset);
-
-            var topology = await _client.TopologyRequest().Send();
-            Console.WriteLine(topology);
-
-            signal.WaitOne();
-        }
-
-        private IConfiguration BuildConfiguration()
-        {
-            return new ConfigurationBuilder()
-            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .Build();
-        }
+    private static IConfiguration BuildConfiguration()
+    {
+        return new ConfigurationBuilder()
+        .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .Build();
     }
 }
