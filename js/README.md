@@ -1,6 +1,6 @@
 # c8-develop-workers-nodejs-lab
 
-
+Docs: https://docs.camunda.io/docs/apis-tools/typescript/typescript-sdk/
 
 npm install -D typescript
 
