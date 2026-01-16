@@ -14,7 +14,8 @@ import io.camunda.client.impl.oauth.OAuthCredentialsProviderBuilder;
 public class PaymentApplication {
 
     // Zeebe Client Credentials
-    private static final String ZEEBE_ADDRESS = "XXXXXXXXXXXX.XXXX.zeebe.camunda.io";
+    private static final String ZEEBE_GRPC_ADDRESS = "XXXXXXXXXXXX.XXXX.zeebe.camunda.io";
+    private static final String ZEEBE_REST_ADDRESS = "XXXXXXXXXXXX.XXXX.zeebe.camunda.io";
     private static final String ZEEBE_CLIENT_ID = "XXXXXXXXXXXX";
     private static final String ZEEBE_CLIENT_SECRET = "XXXXXXXXXXXXXXXXXXXXXXXX";
     private static final String ZEEBE_AUTHORIZATION_SERVER_URL = "https://login.cloud.camunda.io/oauth/token";
@@ -30,7 +31,8 @@ public class PaymentApplication {
                 .build();
 
         try (final CamundaClient client = CamundaClient.newClientBuilder()
-                .grpcAddress(URI.create("https://" + ZEEBE_ADDRESS))
+                .grpcAddress(URI.create(ZEEBE_GRPC_ADDRESS))
+                .restAddress(URI.create(ZEEBE_REST_ADDRESS))
                 .credentialsProvider(credentialsProvider)
                 .build()) {
 

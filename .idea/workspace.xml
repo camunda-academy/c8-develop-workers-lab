@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="978abd63-fbd3-4ea9-9e02-2eb480668f68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/c8-develop-workers-lab-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/Services/CreditCardService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/Services/CreditService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/Workers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/camunda-8-training-csharp.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csharp/camunda-8-training-csharp.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/com/camunda/academy/PaymentApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/com/camunda/academy/services/CreditCardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/java/com/camunda/academy/services/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/main/resources/order.bpmn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/src/test/java/com/camunda/academy/c8_develop_workers_spring_lab/C8DevelopWorkersSpringLabApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/target/classes/com/camunda/academy/PaymentApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/target/classes/com/camunda/academy/services/CreditCardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/target/classes/com/camunda/academy/services/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-spring/target/classes/order.bpmn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/camunda/academy/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/camunda/academy/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/resources/order.bpmn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/src/worker_template.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/exceptions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/exceptions/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/services/credit_card_service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/services/credit_service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/workers.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TalkinWhip"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/camunda-academy/c8-develop-workers-lab.git",
+    "accountId": "a4841913-9f33-4549-88d9-fe1aeefed672"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="38LKjhAokra7cGSNWimI5njJmXs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PaymentApplication.executor": "Run",
+    "Maven.c8-getting-started-microservice-orchestration-lab2 [clean].executor": "Run",
+    "Maven.c8-getting-started-microservice-orchestration-lab2 [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="978abd63-fbd3-4ea9-9e02-2eb480668f68" name="Changes" comment="" />
+      <created>1768573547566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768573547566</updated>
+      <workItem from="1768573548730" duration="2433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
