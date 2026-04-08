@@ -44,3 +44,36 @@ async function jobHandler(job) {
 }
 
 // ...
+
+// Service functions for later exercises
+
+function getCustomerCredit(customerId) {
+
+      let credit = 0.0;
+
+      const regEx = /\d+/;
+
+      const match = customerId.match(regEx);
+
+      if (match) { credit = parseFloat(match); }
+
+      return credit;
+}
+
+function deductCredit(amount, credit) {
+
+      let openAmount = 0.0;
+
+      if (credit < amount) { openAmount = amount - credit; }
+
+      return openAmount;
+}
+
+function isInvalidExpiryDate(expiryDate) {
+
+    if (expiryDate.length != 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
