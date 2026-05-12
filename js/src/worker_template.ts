@@ -1,6 +1,6 @@
 import { createCamundaClient } from "@camunda8/orchestration-cluster-api";
 
-const config = require('../config.json');   // API Credentials
+import config from '../config.json' with { type: 'json' };  // API Credentials
 
 const client = createCamundaClient({
     config: {
