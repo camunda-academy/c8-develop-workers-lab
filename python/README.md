@@ -1,4 +1,4 @@
-pip install pyzeebe [--proxy]
+pip install camunda-orchestration-sdk
 
 Fill in config.ini with your credentials (you can copy the Spring configuration from your client).
 
