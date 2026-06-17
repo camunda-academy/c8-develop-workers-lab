@@ -8,8 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="zb-client" Version="2.9.0" />
+    <!-- New official Camunda C# SDK. Replaces the old zb-client (gRPC). -->
+    <PackageReference Include="Camunda.Orchestration.Sdk" Version="9.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
