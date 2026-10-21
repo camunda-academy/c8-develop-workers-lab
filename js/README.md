@@ -12,7 +12,7 @@ Initialize the project and install the dependency:
 ```bash
 npm init -y
 npm pkg set type=module
-npm i @camunda8/orchestration-cluster-api
+npm i @camunda8/orchestration-cluster-api@^9.1.2
 ```
 
 Run the worker:
